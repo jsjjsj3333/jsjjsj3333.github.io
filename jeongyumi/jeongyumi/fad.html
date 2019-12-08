@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("s1").click(function(){
+          $("#big1").fadeIn(1000);
+        });
+        $("big1").click(function(){
+          $("#big1").fadeOut(1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>사용법</h1>
+    <div id="gallery">
+      <ul>
+        <li>
+          <img src="dog2.png" id="s1" class="smallpic">
+          <img src="dog3.png" id="big1" class="bigpic">
+        </li>
+        <li>
+          <img src="dog1.png" id="s2" class="smallpic">
+          <img src="dog2.png" id="big2" class="bigpic">
+        </li>
+        <li>
+          <img src="cat1.png" id="s3" class="smallpic">
+          <img src="cat2.png" id="big3" class="bigpic">
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
